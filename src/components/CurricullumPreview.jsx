@@ -1,4 +1,6 @@
 import "../styles/CurricullumPreview.css"
+import iconPhone from "../assets/phone.svg"
+import iconEmail from "../assets/email.svg"
 
 export default function CurricullumPreview({ generalInfo, educationalInfo = null, professionalInfo = null }) {
   return (<div className="curricullum-container">
@@ -7,12 +9,14 @@ export default function CurricullumPreview({ generalInfo, educationalInfo = null
 
         <address>
           <h1 className="name">{generalInfo.name}</h1>
+
           <div className="address-flex">
-            <img className="icon" src="src/assets/email.svg" />
+            <img className="icon" src={iconEmail} />
             <p>{generalInfo.email}</p>
           </div>
+
           <div className="address-flex">
-            <img className="icon" src="src/assets/phone.svg" />
+            <img className="icon" src={iconPhone} />
             <p>{generalInfo.phone}</p>
           </div>
         </address>
