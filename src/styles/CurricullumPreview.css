@@ -1,0 +1,39 @@
+.curricullum-container {
+  padding: 0.5rem;
+}
+
+.curricullum {
+  padding: 1rem;
+  border: solid 2px black;
+  background-color: white;
+}
+
+.name {
+  font-size: clamp(2rem, 9vw, 4rem);
+  margin-block: 1rem;
+  font-style: italic;
+}
+
+.address-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.address-flex > p {
+  word-break: break-all;
+}
+
+.icon {
+  max-width: 1.5rem;
+}
+
+.edu-study,
+.edu-school {
+  margin-block: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .curricullum-container{
+    flex-grow: 1;
+  }
+}
